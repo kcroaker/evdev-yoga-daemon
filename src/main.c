@@ -80,8 +80,10 @@ int main(void) {
 			if(ev.type == EV_SW && ev.code == SW_TABLET_MODE) {
 				if(ev.value == 0) {
 					printf("*** Laptop mode\n");
+					enter_laptop_mode();
 				} else if(ev.value == 1) {
 					printf("*** Tablet mode\n");
+					enter_tablet_mode();
 				}
 			}
 		}
