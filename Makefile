@@ -4,7 +4,7 @@ BIN_NAME = evdev-yoga-daemon
 
 OPTS = -Wall -O2 -pipe
 
-$(BIN_NAME): main.o 
+$(BIN_NAME): main.o evdev-backend.o tablet-switch.o
 	gcc -o $@ $^ -lm `pkg-config --cflags --libs libevdev`
 
 %.o: src/%.c
