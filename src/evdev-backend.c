@@ -4,7 +4,6 @@
 int rc = 1;
 
 struct libevdev *open_acpi_device(const char *devpath) {
-
 	struct libevdev *dev = NULL;
 	int fd;
 

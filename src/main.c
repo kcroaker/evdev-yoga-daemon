@@ -10,13 +10,6 @@ int main(void) {
 
 	dev = open_acpi_device(devpath);
 
-	//printf("Input device name: \"%s\"\n", libevdev_get_name(dev));
-
-	//printf("Input device ID: bus %#x vendor %#x product %#x\n",
-	//	libevdev_get_id_bustype(dev),
-	//	libevdev_get_id_vendor(dev),
-	//	libevdev_get_id_product(dev));
-
 	if (!libevdev_has_event_type(dev, EV_SW) ||
 		!libevdev_has_event_code(dev, EV_SW, SW_TABLET_MODE)) {
 			printf("Error: This device does not generate tablet switching events\n");
