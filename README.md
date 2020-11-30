@@ -1,4 +1,5 @@
-!! evdev-yoga-daemon
+evdev-yoga-daemon
+=================
 
 This is a daemon that listens for thinkpad 2-in-1 device switch mode events on an ACPI objected registered with evdev.
 
@@ -19,3 +20,4 @@ Build reqs:
 
 * libevdev libraries and a bunch of stdlib stuff.
 * make & pkgconfig (assumed to be installed)
+* gcc
