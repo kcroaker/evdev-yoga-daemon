@@ -13,8 +13,9 @@ When the laptop is converted back to tablet mode, the above devices are explicit
 
 Reqs:
 
-* run as root (!)
+* user must be in the input group (or be root etc) to run the program
 * xinput (assumed to be installed)
+* onboard (assumed to be installed)
 
 Build reqs:
 

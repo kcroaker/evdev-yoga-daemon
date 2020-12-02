@@ -11,6 +11,8 @@ void enter_laptop_mode() {
 	system(command);
 	sprintf(command, "xinput enable \"%s\" ", "TPPS/2 IBM TrackPoint");
 	system(command);
+	sprintf(command, "pkill onboard");
+	system(command);
 	return;
 }
 
@@ -24,6 +26,8 @@ void enter_tablet_mode() {
 	sprintf(command, "xinput disable \"%s\" ", "SynPS/2 Synaptics TouchPad");
 	system(command);
 	sprintf(command, "xinput disable \"%s\" ", "TPPS/2 IBM TrackPoint");
+	system(command);
+	sprintf(command, "nohup onboard &");
 	system(command);
 	return;
 }
