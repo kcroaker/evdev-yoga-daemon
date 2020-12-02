@@ -1,6 +1,8 @@
 evdev-yoga-daemon
 =================
 
+*NEW! Now supports (and requires) the on screen keyboard program OnBoard*
+
 This is a daemon that listens for thinkpad 2-in-1 device switch mode events on an ACPI objected registered with evdev.
 
 (Ie. runs on systems like Void Linux, some Gentoo systems, possibly others..)
